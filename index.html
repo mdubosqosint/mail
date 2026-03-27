@@ -909,10 +909,10 @@ function sendMail() {
     response = "Oh vous savez, ma mémoire flanche depuis quelques années… Je ne suis pas sûre de me souvenir… C'était quand déjà ?";
   } else if (step === 1 && contains(msg, ["23 mai 2022", "23 05 2022"])) {
     step = 2;
-    response = "Cette date… POURQUOI VOUS ME PARLEZ DE CETTE DATE ?! Si vous saviez comme je m'en veux… Enfin bon, à quelle occasion j'ai créé un cocktail ?";
+    response = "Cette date… POURQUOI VOUS ME PARLEZ DE CETTE DATE ?! Si vous saviez comme je m'en veux…";
   } else if (step === 2 && !contains(msg, ["recette","cocktail","23 mai 2022","23 05 2022","concours goudes","cri ultime","cris ultime","crustacés","crustaces"])) {
     step = 3;
-    response = "Je m'en veux… Ça n'aurait pas dû se passer comme ça…";
+    response = "Je m'en veux… Ça n'aurait pas dû se passer comme ça… Enfin bon, à quelle occasion j’ai créé un cocktail?";
   } else if (step === 3 && contains(msg, ["concours goudes"])) {
     step = 4;
     response = "Vous voulez la recette de mon cocktail c'est ça ? Un cocktail… Quel cocktail ? Quel était son nom ?";
